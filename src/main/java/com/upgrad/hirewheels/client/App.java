@@ -13,6 +13,7 @@ public class App {
 
         BalanceService balanceService = (BalanceService) context.getBean("userBalance");
         System.out.println(balanceService.checkUserBalance());
+        //first do it
 
 
     }
