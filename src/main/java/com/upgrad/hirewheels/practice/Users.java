@@ -8,6 +8,7 @@ public class Users {
     private String email;
     private String mobile_no;
     private int wallet_money;
+    private BalanceService balanceService;
 
     public int getUser_id() {
         return user_id;
@@ -65,6 +66,14 @@ public class Users {
         this.wallet_money = wallet_money;
     }
 
+    public BalanceService getBalanceService() {
+        return balanceService;
+    }
+
+    public void setBalanceService(BalanceService balanceService) {
+        this.balanceService = balanceService;
+    }
+
     @Override
     public String toString() {
         return "Users{" +
@@ -75,6 +84,7 @@ public class Users {
                 ", email='" + email + '\'' +
                 ", mobile_no='" + mobile_no + '\'' +
                 ", wallet_money=" + wallet_money +
+                ", balanceService=" + balanceService +
                 '}';
     }
 }

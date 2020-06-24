@@ -1,5 +1,7 @@
 package com.upgrad.hirewheels.practice;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class BalanceService {
 
     private UserBalanceInterface userBalanceInterface;
@@ -7,12 +9,17 @@ public class BalanceService {
     public void setUserBalanceInterface(UserBalanceInterface userBalanceInterface) {
         this.userBalanceInterface = userBalanceInterface;
     }
-
+    @Autowired
     public double checkUserBalance() {
-        UserBalanceImpl userBalanceImpl = new UserBalanceImpl();
+        UserBalanceInterface userBalanceImpl = new UserBalanceImpl();
         return userBalanceImpl.getBalance();
 
     }
 
-
+    @Override
+    public String toString() {
+        return "BalanceService{" +
+                "checkUserBalance=" + checkUserBalance() +
+                '}';
+    }
 }

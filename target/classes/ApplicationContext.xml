@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean id="user1" class="com.upgrad.hirewheels.practice.Users">
+	<bean id="user1" class="com.upgrad.hirewheels.practice.Users" autowire="byName">
 		<property name="user_id" value="1" />
 		<property name="first_name" value="Shivam" />
 		<property name="last_name" value="Singhal" />
@@ -13,9 +13,11 @@
 		<property name="email" value="singhal29797shivam@gmail.com" />
 		<property name="mobile_no" value="8650260576" />
 		<property name="wallet_money" value="100000" />
+		<!--<property name="balanceService" ref="balanceService" />-->
 	</bean>
 
-	<bean id="userBalanceImpl" class="com.upgrad.hirewheels.practice.BalanceService">
+	<bean id="balanceService" class="com.upgrad.hirewheels.practice.BalanceService">
+
 	</bean>
 
 
