@@ -9,10 +9,8 @@ public class BalanceService {
     }
 
     public double checkUserBalance() {
-        UserBalanceInterface userBalanceInterface = new UserBalanceImpl();
-        userBalanceInterface.getBalance();
-
-        return 1000.00;
+        UserBalanceImpl userBalanceImpl = new UserBalanceImpl();
+        return userBalanceImpl.getBalance();
 
     }
 

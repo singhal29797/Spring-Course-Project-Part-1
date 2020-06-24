@@ -15,7 +15,7 @@
 		<property name="wallet_money" value="100000" />
 	</bean>
 
-	<bean id="userBalance" class="com.upgrad.hirewheels.practice.UserBalanceImpl">
+	<bean id="userBalanceImpl" class="com.upgrad.hirewheels.practice.BalanceService">
 	</bean>
 
 

@@ -11,9 +11,8 @@ public class App {
         Users users = (Users) context.getBean("user1");
         System.out.println(users);
 
-        BalanceService balanceService = (BalanceService) context.getBean("userBalance");
+        BalanceService balanceService = (BalanceService) context.getBean("userBalanceImpl");
         System.out.println(balanceService.checkUserBalance());
-        //first do it
 
 
     }
