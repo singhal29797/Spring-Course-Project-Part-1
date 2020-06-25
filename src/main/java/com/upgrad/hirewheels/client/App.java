@@ -2,6 +2,7 @@ package com.upgrad.hirewheels.client;
 
 import com.upgrad.hirewheels.practice.BalanceService;
 import com.upgrad.hirewheels.practice.UserBalanceImpl;
+import com.upgrad.hirewheels.practice.UserService;
 import com.upgrad.hirewheels.practice.Users;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,6 +16,8 @@ public class App {
         BalanceService balanceService = (BalanceService) context.getBean("balanceService");
         System.out.println(balanceService.checkUserBalance());
 
+        UserService userService = (UserService) context.getBean("userService");
+        System.out.println(userService);
 
     }
 }

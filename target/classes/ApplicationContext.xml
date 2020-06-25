@@ -5,6 +5,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
+	<context:annotation-config/>
+
+
 	<bean id="user1" class="com.upgrad.hirewheels.practice.Users" autowire="byName">
 		<property name="user_id" value="1" />
 		<property name="first_name" value="Shivam" />
@@ -16,11 +19,23 @@
 		<!--<property name="balanceService" ref="balanceService" />-->
 	</bean>
 
+	<bean id="user2" class="com.upgrad.hirewheels.practice.Users">
+		<property name="user_id" value="2" />
+		<property name="first_name" value="Naman" />
+		<property name="last_name" value="Mittal" />
+		<property name="password" value="1234567890" />
+		<property name="email" value="mnaman567@gmail.com" />
+		<property name="mobile_no" value="8858584758" />
+		<property name="wallet_money" value="250000" />
+	</bean>
+
 	<bean id="balanceService" class="com.upgrad.hirewheels.practice.BalanceService">
 
 	</bean>
 
-
+	<bean id="userService" class="com.upgrad.hirewheels.practice.UserService" >
+		<!--<property name="users" ref="user2" />-->
+	</bean>
 
 </beans>
 
