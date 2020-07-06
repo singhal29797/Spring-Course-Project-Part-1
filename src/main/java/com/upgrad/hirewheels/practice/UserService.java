@@ -6,24 +6,24 @@ public class UserService {
 
     @Qualifier("user2")
     @Autowired
-    private Users users;
+    private User user;
 
-    public Users getUsers() {
-        return users;
+    public User getUsers() {
+        return user;
     }
 
-    public void setUsers(Users users) {
-        this.users = users;
+    public void setUsers(User user) {
+        this.user = user;
     }
 
     public void printName() {
-        users.getFirst_name();
+        user.getFirst_name();
     }
 
     @Override
     public String toString() {
         return "UserService{" +
-                "firstName=" + users.getFirst_name() +
+                "firstName=" + user.getFirst_name() +
                 '}';
     }
 }

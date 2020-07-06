@@ -1,14 +1,23 @@
-package com.upgrad.hirewheels.practice;
-public class Users {
+package com.upgrad.hirewheels.models;
 
+import javax.persistence.*;
+
+@Entity
+public class Users {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int user_id;
+    @Column(nullable = false)
     private String first_name;
     private String last_name;
+    @Column(nullable = false)
     private String password;
+    @Column(unique = true , nullable = false)
     private String email;
+    @Column(unique = true , nullable = false)
     private String mobile_no;
     private int wallet_money;
-    private BalanceService balanceService;
+
 
     public int getUser_id() {
         return user_id;
@@ -66,12 +75,15 @@ public class Users {
         this.wallet_money = wallet_money;
     }
 
-    public BalanceService getBalanceService() {
-        return balanceService;
-    }
+    public Users() {}
 
-    public void setBalanceService(BalanceService balanceService) {
-        this.balanceService = balanceService;
+    public Users(String first_name, String last_name, String password, String email, String mobile_no, int wallet_money) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.password = password;
+        this.email = email;
+        this.mobile_no = mobile_no;
+        this.wallet_money = wallet_money;
     }
 
     @Override
@@ -80,11 +92,10 @@ public class Users {
                 "user_id=" + user_id +
                 ", first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
-                ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
                 ", mobile_no='" + mobile_no + '\'' +
                 ", wallet_money=" + wallet_money +
-                ", balanceService=" + balanceService +
                 '}';
     }
 }

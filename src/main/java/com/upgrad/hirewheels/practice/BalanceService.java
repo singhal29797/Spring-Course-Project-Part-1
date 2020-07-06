@@ -1,7 +1,5 @@
 package com.upgrad.hirewheels.practice;
 
-//import org.springframework.beans.factory.annotation.Autowired;
-
 public class BalanceService {
 
     private UserBalanceInterface userBalanceInterface;

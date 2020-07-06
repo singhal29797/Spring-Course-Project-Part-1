@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b231ba-7684-4488-bbdd-0f475225d94a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/client/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/client/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/practice/BalanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/practice/BalanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/practice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/practice/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/practice/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/practice/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/client/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/client/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/BalanceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/BalanceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/UserBalanceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/UserBalanceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/UserBalanceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/UserBalanceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/Users.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +79,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/kavit-shah/New folder (3)/tm-movie-booking-app-backend/4.movieTicketBooking -serviceLayer - before" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/mtb Vishwa/tm-movie-booking-app-backend/8.movieTicketBooking - Basic REST APIs - ExceptionHandling" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -108,8 +128,32 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="mtb " type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.App" />
+      <item itemvalue="Maven.mtb " />
       <item itemvalue="Maven.HireWheels" />
     </list>
     <recent_temporary>
@@ -197,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593114811634</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="2nd Checkpoint complete">
+      <created>1593114916837</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593114916837</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,54 +258,58 @@
     <option name="LAST_COMMIT_MESSAGE" value="2nd Checkpoint complete" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592904561486">
+    <state x="361" y="72" key="#Project_Structure" timestamp="1593157192245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592904561486" />
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1593111718817">
+    <state x="361" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1593157192245" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593157259626">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593111718817" />
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1593114809598">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1593157259626" />
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1593973940414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593114809598" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1593006607844">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593973940414" />
+    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1593114915425">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593006607844" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1593114687880">
+    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593114915425" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1593961704606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593114687880" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1593114687880">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593961704606" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1594010052035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593114687880" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1593114687880">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594010052035" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1594010052035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593114687880" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1593114687880">
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594010052035" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1594010052035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593114687880" />
-    <state x="277" y="56" key="SettingsEditor" timestamp="1592989459946">
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594010052035" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1594010052035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592989459946" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1593114868929">
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594010052035" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1593157437865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593114868929" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593157437865" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1593114932029">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593114932029" />
     <state x="584" y="191" key="chooseDestDirectoryDialog" timestamp="1592904515691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="191" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1592904515691" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1593106781601">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1593157391442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593106781601" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593157391442" />
     <state x="435" y="205" key="git4idea.merge.GitPullDialog" timestamp="1592993842978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
