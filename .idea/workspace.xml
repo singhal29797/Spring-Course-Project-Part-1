@@ -2,34 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b231ba-7684-4488-bbdd-0f475225d94a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/ActivityDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/CityDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/FuelTypeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/LocationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/RequestDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/RequestStatusDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/VehicleCategoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/VehicleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/VehicleSubcategoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/FuelType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/RequestStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/VehicleCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/VehicleSubcategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/ActivityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/CityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/FuelTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/LocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/RequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/RequestStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/UsersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/VehicleCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/VehicleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/VehicleSubcategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/ActivityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/BookingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/CityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/FuelTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/LocationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RequestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RequestStatusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/UsersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleSubcategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/client/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/client/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/daos/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/client/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/client/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/BalanceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/BalanceService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/UserBalanceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/hirewheels/practice/UserBalanceImpl.class" afterDir="false" />
@@ -53,8 +52,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -280,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594010240017</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="4th  Checkpoint started">
+      <created>1594062035904</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1594062035904</updated>
+    </task>
+    <task id="LOCAL-00013" summary="4th  Checkpoint started">
+      <created>1594062079727</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1594062079727</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -289,7 +302,8 @@
     <MESSAGE value="2nd Checkpoint" />
     <MESSAGE value="2nd Checkpoint complete" />
     <MESSAGE value="3rd Checkpoint complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd Checkpoint complete" />
+    <MESSAGE value="4th  Checkpoint started" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th  Checkpoint started" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Project_Structure" timestamp="1593157192245">
@@ -308,38 +322,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594042300212" />
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1594062032669">
+    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1594062078469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1594062032669" />
+    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1594062078469" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1593961704606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593961704606" />
-    <state width="1493" height="666" key="GridCell.Tab.0.bottom" timestamp="1594061950035">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1594063948512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594061950035" />
-    <state width="1493" height="666" key="GridCell.Tab.0.center" timestamp="1594061950030">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594063948512" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1594063948512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="666" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594061950030" />
-    <state width="1493" height="666" key="GridCell.Tab.0.left" timestamp="1594061950030">
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594063948512" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1594063948512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="666" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594061950030" />
-    <state width="1493" height="666" key="GridCell.Tab.0.right" timestamp="1594061950030">
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594063948512" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1594063948512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="666" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594061950030" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594063948512" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1594035469804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594035469804" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1594062050210">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1594062091795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594062050210" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594062091795" />
     <state x="584" y="191" key="chooseDestDirectoryDialog" timestamp="1592904515691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

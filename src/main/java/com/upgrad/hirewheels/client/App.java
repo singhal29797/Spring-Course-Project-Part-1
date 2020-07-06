@@ -1,6 +1,8 @@
 package com.upgrad.hirewheels.client;
 
+import com.upgrad.hirewheels.daos.ActivityDAO;
 import com.upgrad.hirewheels.daos.UserDAO;
+import com.upgrad.hirewheels.models.Activity;
 import com.upgrad.hirewheels.practice.BalanceService;
 import com.upgrad.hirewheels.practice.UserService;
 import com.upgrad.hirewheels.practice.User;
@@ -43,14 +45,39 @@ public class App {
         System.out.println("-------------------------------------Inserted Users Details---------------------------------------");
         Users savedUser = userDAO.insertUsersDetails(users);
 
-        /*System.out.println("-------------------------------------Fetch All User Details---------------------------------------");
+        System.out.println("-------------------------------------Fetch All User Details---------------------------------------");
         System.out.println(userDAO.fetchAllUsersDetails());
 
-        *//*System.out.println("-------------------------------------Fetch User Details by Id---------------------------------------");
+        System.out.println("-------------------------------------Fetch User Details by Id---------------------------------------");
         System.out.println(userDAO.fetchUserDetails(2));
 
-        *//*System.out.println("-------------------------------------Deleted User Detail by Id---------------------------------------");
+        /*System.out.println("-------------------------------------Deleted User Detail by Id---------------------------------------");
         System.out.println(userDAO.deleteUser(2));*/
+
+        System.out.println("-------------------------------------Inserted Activity---------------------------------------");
+        ActivityDAO activityDAO = (ActivityDAO) context.getBean("activityDAO");
+        Activity activity = new Activity("A");
+
+        Activity savedActivity = activityDAO.save(activity);
+        System.out.println(savedActivity);
+        System.out.println("-------------------------------------Fetch All Activity---------------------------------------");
+        System.out.println(activityDAO.findAll());
+
+        System.out.println("------------------------------------ Fetch Activity By Id---------------------------------------");
+        System.out.println(activityDAO.findById(2));
+
+        System.out.println("-------------------------------------Updated Activity---------------------------------------");
+        Activity activity1 = activityDAO.findById(activity.getActivityId()).get();
+        activity1.setActivityType("B");
+        System.out.println(activityDAO.save(activity1));
+
+        System.out.println("-------------------------------------Delete Activity By Id---------------------------------------");
+        activityDAO.deleteById(2);
+
+
+
+
+
 
     }
 }
