@@ -3,7 +3,6 @@ package com.upgrad.hirewheels.daos;
 import com.upgrad.hirewheels.models.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import java.lang.String;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -26,9 +25,9 @@ public class UserDAOImpl implements UserDAO {
         return users;
     }
 
-    public Users updatePassword(int id) {
+    public Users updatePassword(int userId) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
-        Users users = entityManager.find(Users.class,id);
+        Users users = entityManager.find(Users.class,userId);
         entityManager.getTransaction().begin();
         entityManager.persist(users);
         entityManager.getTransaction().commit();
@@ -36,8 +35,8 @@ public class UserDAOImpl implements UserDAO {
         return users;
     }
 
-    public Users fetchUserDetails(int user_id) {
-        return entityManagerFactory.createEntityManager().find(Users.class, user_id);
+    public Users fetchUserDetails(int userId) {
+        return entityManagerFactory.createEntityManager().find(Users.class, userId);
     }
 
     public List<Users> fetchAllUsersDetails() {
@@ -45,9 +44,9 @@ public class UserDAOImpl implements UserDAO {
         return (List<Users>)query.getResultList();
     }
 
-    public boolean deleteUser(int user_id) {
+    public boolean deleteUser(int userId) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
-        Users users = entityManager.find(Users.class,user_id);
+        Users users = entityManager.find(Users.class,userId);
         entityManager.getTransaction().begin();
         entityManager.remove(users);
         entityManager.getTransaction().commit();

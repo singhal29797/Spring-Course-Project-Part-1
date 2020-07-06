@@ -1,46 +1,53 @@
 package com.upgrad.hirewheels.models;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int user_id;
+    private int userId;
+
     @Column(nullable = false)
-    private String first_name;
-    private String last_name;
+    private String firstName;
+
+    private String lastName;
+
     @Column(nullable = false)
     private String password;
+
     @Column(unique = true , nullable = false)
     private String email;
+
     @Column(unique = true , nullable = false)
-    private String mobile_no;
-    private int wallet_money;
+    private String mobileNumber;
 
+    @Column(nullable = false)
+    private float walletMoney;
 
-    public int getUser_id() {
-        return user_id;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getPassword() {
@@ -59,43 +66,62 @@ public class Users {
         this.email = email;
     }
 
-    public String getMobile_no() {
-        return mobile_no;
+    public String getMobileNumber() {
+        return mobileNumber;
     }
 
-    public void setMobile_no(String mobile_no) {
-        this.mobile_no = mobile_no;
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
     }
 
-    public int getWallet_money() {
-        return wallet_money;
+    public float getWalletMoney() {
+        return walletMoney;
     }
 
-    public void setWallet_money(int wallet_money) {
-        this.wallet_money = wallet_money;
+    public void setWalletMoney(float walletMoney) {
+        this.walletMoney = walletMoney;
     }
 
     public Users() {}
 
-    public Users(String first_name, String last_name, String password, String email, String mobile_no, int wallet_money) {
-        this.first_name = first_name;
-        this.last_name = last_name;
+    public Users(String firstName, String lastName, String password, String email, String mobileNumber, float walletMoney) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.password = password;
         this.email = email;
-        this.mobile_no = mobile_no;
-        this.wallet_money = wallet_money;
+        this.mobileNumber = mobileNumber;
+        this.walletMoney = walletMoney;
     }
 
     @Override
     public String toString() {
         return "Users{" +
-                "user_id=" + user_id +
-                ", first_name='" + first_name + '\'' +
-                ", last_name='" + last_name + '\'' +
-                ", email='" + email + '\'' +
+                "userId=" + userId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", password='" + password + '\'' +
-                ", mobile_no='" + mobile_no + '\'' +
-                ", wallet_money=" + wallet_money +
+                ", email='" + email + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                ", walletMoney=" + walletMoney +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Users users = (Users) o;
+        return userId == users.userId &&
+                Float.compare(users.walletMoney, walletMoney) == 0 &&
+                Objects.equals(firstName, users.firstName) &&
+                Objects.equals(lastName, users.lastName) &&
+                Objects.equals(password, users.password) &&
+                Objects.equals(email, users.email) &&
+                Objects.equals(mobileNumber, users.mobileNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userId, firstName, lastName, password, email, mobileNumber, walletMoney);
     }
 }

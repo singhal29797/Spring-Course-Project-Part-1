@@ -32,10 +32,13 @@ public class App {
         System.out.println(userService);
 
         /*===================================================================================================================================*/
+
         System.out.println("-------------------------------------Checkpoint 3 Solution---------------------------------------");
-        Users users = new Users("Ram", "Kumar", "password", "ramkumuar@4.com", "9795958876", 10000);
 
         UserDAO userDAO = (UserDAO) context.getBean("userDAO");
+
+        Users users = new Users("Ram", "Kumar", "password", "ramkumuar@4.com", "9795958876", 10000);
+
 
         System.out.println("-------------------------------------Inserted Users Details---------------------------------------");
         Users savedUser = userDAO.insertUsersDetails(users);
