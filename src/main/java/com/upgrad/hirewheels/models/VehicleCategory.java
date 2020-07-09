@@ -1,6 +1,7 @@
 package com.upgrad.hirewheels.models;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -12,6 +13,9 @@ public class VehicleCategory {
 
     @Column(nullable = false, unique = true)
     private String vehicleCategoryName;
+
+    @OneToMany(mappedBy = "vehicleCategory")
+    private List<VehicleSubcategory> vehicleSubcategory;
 
     public int getVehicleCategoryId() {
         return vehicleCategoryId;

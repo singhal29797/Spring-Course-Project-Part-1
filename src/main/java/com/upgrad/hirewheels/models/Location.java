@@ -16,8 +16,8 @@ public class Location {
     @Column(nullable = false)
     private String address;
 
-    @Column(nullable = false)
-    private int cityId;
+    @OneToOne
+    private City city;
 
     @Column(nullable = false)
     private int pincode;
@@ -46,14 +46,6 @@ public class Location {
         this.address = address;
     }
 
-    public int getCityId() {
-        return cityId;
-    }
-
-    public void setCityId(int cityId) {
-        this.cityId = cityId;
-    }
-
     public int getPincode() {
         return pincode;
     }
@@ -67,7 +59,6 @@ public class Location {
     public Location(String locationName, String address, int cityId, int pincode) {
         this.locationName = locationName;
         this.address = address;
-        this.cityId = cityId;
         this.pincode = pincode;
     }
 
@@ -77,7 +68,6 @@ public class Location {
                 "locationId=" + locationId +
                 ", locationName='" + locationName + '\'' +
                 ", address='" + address + '\'' +
-                ", cityId=" + cityId +
                 ", pincode=" + pincode +
                 '}';
     }
@@ -88,7 +78,6 @@ public class Location {
         if (o == null || getClass() != o.getClass()) return false;
         Location location = (Location) o;
         return locationId == location.locationId &&
-                cityId == location.cityId &&
                 pincode == location.pincode &&
                 Objects.equals(locationName, location.locationName) &&
                 Objects.equals(address, location.address);
@@ -96,6 +85,6 @@ public class Location {
 
     @Override
     public int hashCode() {
-        return Objects.hash(locationId, locationName, address, cityId, pincode);
+        return Objects.hash(locationId, locationName, address, pincode);
     }
 }

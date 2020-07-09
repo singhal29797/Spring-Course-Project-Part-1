@@ -23,14 +23,14 @@ public class Booking {
     @Column(nullable = false)
     private float amount;
 
-    @Column(nullable = false)
-    private int locationId;
+    @OneToOne
+    private Location location;
 
-    @Column(nullable = false)
-    private int vehicleId;
+    @OneToOne
+    private Vehicle vehicle;
 
-    @Column(nullable = false)
-    private int userId;
+    @OneToOne
+    private Users userId;
 
     public int getBookingId() {
         return bookingId;
@@ -72,40 +72,13 @@ public class Booking {
         this.amount = amount;
     }
 
-    public int getLocationId() {
-        return locationId;
-    }
-
-    public void setLocationId(int locationId) {
-        this.locationId = locationId;
-    }
-
-    public int getVehicleId() {
-        return vehicleId;
-    }
-
-    public void setVehicleId(int vehicleId) {
-        this.vehicleId = vehicleId;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
     public Booking() {}
 
-    public Booking(Date pickupDate, Date dropOffDate, Date bookingDate, float amount, int locationId, int vehicleId, int userId) {
+    public Booking(Date pickupDate, Date dropOffDate, Date bookingDate, float amount) {
         this.pickupDate = pickupDate;
         this.dropOffDate = dropOffDate;
         this.bookingDate = bookingDate;
         this.amount = amount;
-        this.locationId = locationId;
-        this.vehicleId = vehicleId;
-        this.userId = userId;
     }
 
     @Override
@@ -116,9 +89,6 @@ public class Booking {
                 ", dropOffDate=" + dropOffDate +
                 ", bookingDate=" + bookingDate +
                 ", amount=" + amount +
-                ", locationId=" + locationId +
-                ", vehicleId=" + vehicleId +
-                ", userId=" + userId +
                 '}';
     }
 
@@ -129,9 +99,6 @@ public class Booking {
         Booking booking = (Booking) o;
         return bookingId == booking.bookingId &&
                 Float.compare(booking.amount, amount) == 0 &&
-                locationId == booking.locationId &&
-                vehicleId == booking.vehicleId &&
-                userId == booking.userId &&
                 Objects.equals(pickupDate, booking.pickupDate) &&
                 Objects.equals(dropOffDate, booking.dropOffDate) &&
                 Objects.equals(bookingDate, booking.bookingDate);
@@ -139,7 +106,7 @@ public class Booking {
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookingId, pickupDate, dropOffDate, bookingDate, amount, locationId, vehicleId, userId);
+        return Objects.hash(bookingId, pickupDate, dropOffDate, bookingDate, amount);
     }
 }
 

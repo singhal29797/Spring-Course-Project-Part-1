@@ -16,8 +16,8 @@ public class VehicleSubcategory {
     @Column(nullable = false)
     private int pricePerHour;
 
-    @Column(nullable = false)
-    private int vehicleCategoryId;
+    @ManyToOne
+    private VehicleCategory vehicleCategory;
 
     public int getVehicleSubcategoryId() {
         return vehicleSubcategoryId;
@@ -43,20 +43,12 @@ public class VehicleSubcategory {
         this.pricePerHour = pricePerHour;
     }
 
-    public int getVehicleCategoryId() {
-        return vehicleCategoryId;
-    }
-
-    public void setVehicleCategoryId(int vehicleCategoryId) {
-        this.vehicleCategoryId = vehicleCategoryId;
-    }
 
     public VehicleSubcategory() {}
 
-    public VehicleSubcategory(String vehicleSubcategoryName, int pricePerHour, int vehicleCategoryId) {
+    public VehicleSubcategory(String vehicleSubcategoryName, int pricePerHour) {
         this.vehicleSubcategoryName = vehicleSubcategoryName;
         this.pricePerHour = pricePerHour;
-        this.vehicleCategoryId = vehicleCategoryId;
     }
 
     @Override
@@ -65,7 +57,6 @@ public class VehicleSubcategory {
                 "vehicleSubcategoryId=" + vehicleSubcategoryId +
                 ", vehicleSubcategoryName='" + vehicleSubcategoryName + '\'' +
                 ", pricePerHour=" + pricePerHour +
-                ", vehicleCategoryId=" + vehicleCategoryId +
                 '}';
     }
 
@@ -76,12 +67,11 @@ public class VehicleSubcategory {
         VehicleSubcategory that = (VehicleSubcategory) o;
         return vehicleSubcategoryId == that.vehicleSubcategoryId &&
                 pricePerHour == that.pricePerHour &&
-                vehicleCategoryId == that.vehicleCategoryId &&
                 Objects.equals(vehicleSubcategoryName, that.vehicleSubcategoryName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(vehicleSubcategoryId, vehicleSubcategoryName, pricePerHour, vehicleCategoryId);
+        return Objects.hash(vehicleSubcategoryId, vehicleSubcategoryName, pricePerHour);
     }
 }

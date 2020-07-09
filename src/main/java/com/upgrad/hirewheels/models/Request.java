@@ -10,20 +10,20 @@ public class Request {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int requestId;
 
-    @Column(nullable = false)
-    private int activityId;
+    @OneToOne
+    private Activity activity;
 
     private String userComments;
     private String adminComments;
 
-    @Column(nullable = false)
-    private int requestStatusId;
+    @OneToOne
+    private RequestStatus requestStatusId;
 
-    @Column(nullable = false)
-    private int vehicleId;
+    @OneToOne
+    private Vehicle vehicle;
 
-    @Column(nullable = false)
-    private  int userId;
+    @OneToOne
+    private Users users;
 
     public int getRequestId() {
         return requestId;
@@ -31,14 +31,6 @@ public class Request {
 
     public void setRequestId(int requestId) {
         this.requestId = requestId;
-    }
-
-    public int getActivityId() {
-        return activityId;
-    }
-
-    public void setActivityId(int activityId) {
-        this.activityId = activityId;
     }
 
     public String getUserComments() {
@@ -57,51 +49,20 @@ public class Request {
         this.adminComments = adminComments;
     }
 
-    public int getRequestStatusId() {
-        return requestStatusId;
+    public Request() {
     }
 
-    public void setRequestStatusId(int requestStatusId) {
-        this.requestStatusId = requestStatusId;
-    }
-
-    public int getVehicleId() {
-        return vehicleId;
-    }
-
-    public void setVehicleId(int vehicleId) {
-        this.vehicleId = vehicleId;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public Request() {}
-
-    public Request(int activityId, String userComments, String adminComments, int requestStatusId, int vehicleId, int userId) {
-        this.activityId = activityId;
+    public Request(String userComments, String adminComments) {
         this.userComments = userComments;
         this.adminComments = adminComments;
-        this.requestStatusId = requestStatusId;
-        this.vehicleId = vehicleId;
-        this.userId = userId;
     }
 
     @Override
     public String toString() {
         return "Request{" +
                 "requestId=" + requestId +
-                ", activityId=" + activityId +
                 ", userComments='" + userComments + '\'' +
                 ", adminComments='" + adminComments + '\'' +
-                ", requestStatusId=" + requestStatusId +
-                ", vehicleId=" + vehicleId +
-                ", userId=" + userId +
                 '}';
     }
 
@@ -111,17 +72,17 @@ public class Request {
         if (o == null || getClass() != o.getClass()) return false;
         Request request = (Request) o;
         return requestId == request.requestId &&
-                activityId == request.activityId &&
-                requestStatusId == request.requestStatusId &&
-                vehicleId == request.vehicleId &&
-                userId == request.userId &&
+                Objects.equals(activity, request.activity) &&
                 Objects.equals(userComments, request.userComments) &&
-                Objects.equals(adminComments, request.adminComments);
+                Objects.equals(adminComments, request.adminComments) &&
+                Objects.equals(requestStatusId, request.requestStatusId) &&
+                Objects.equals(vehicle, request.vehicle) &&
+                Objects.equals(users, request.users);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(requestId, activityId, userComments, adminComments, requestStatusId, vehicleId, userId);
+        return Objects.hash(requestId, activity, userComments, adminComments, requestStatusId, vehicle, users);
     }
 }
 

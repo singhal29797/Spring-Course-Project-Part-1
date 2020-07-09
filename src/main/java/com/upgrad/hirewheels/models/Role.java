@@ -1,6 +1,9 @@
 package com.upgrad.hirewheels.models;
 
+import org.hibernate.annotations.ManyToAny;
+
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -28,6 +31,7 @@ public class Role {
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
+
 
     public Role() {}
 

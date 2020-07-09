@@ -5,7 +5,7 @@ import com.upgrad.hirewheels.services.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service(value = "bookingService")
 public class BookingServiceImpl implements BookingService {
 
     @Autowired

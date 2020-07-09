@@ -5,7 +5,7 @@ import com.upgrad.hirewheels.services.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service(value = "cityService")
 public class CityServiceImpl implements CityService {
 
     @Autowired

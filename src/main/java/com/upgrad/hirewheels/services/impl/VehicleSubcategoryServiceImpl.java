@@ -5,7 +5,7 @@ import com.upgrad.hirewheels.services.VehicleSubcategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service(value = "vehicleSubcategoryService")
 public class VehicleSubcategoryServiceImpl implements VehicleSubcategoryService {
 
     @Autowired

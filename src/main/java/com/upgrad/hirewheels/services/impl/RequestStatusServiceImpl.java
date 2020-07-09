@@ -5,7 +5,7 @@ import com.upgrad.hirewheels.services.RequestStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service(value = "requestStatusService")
 public class RequestStatusServiceImpl implements RequestStatusService {
 
     @Autowired

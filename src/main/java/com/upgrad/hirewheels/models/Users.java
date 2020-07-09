@@ -1,6 +1,7 @@
 package com.upgrad.hirewheels.models;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -25,6 +26,10 @@ public class Users {
 
     @Column(nullable = false)
     private float walletMoney;
+
+    @OneToMany
+    List<Role> role;
+
 
     public int getUserId() {
         return userId;

@@ -5,7 +5,7 @@ import com.upgrad.hirewheels.services.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service(value = "activityService")
 public class ActivityServiceImpl implements ActivityService {
 
     @Autowired

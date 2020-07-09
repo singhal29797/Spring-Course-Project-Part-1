@@ -5,7 +5,7 @@ import com.upgrad.hirewheels.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service(value = "roleService")
 public class RoleServiceImpl implements RoleService {
 
     @Autowired

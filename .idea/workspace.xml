@@ -2,19 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b231ba-7684-4488-bbdd-0f475225d94a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/ActivityDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/BookingDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/CityDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/FuelTypeDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/LocationDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/RequestDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/RequestStatusDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/RoleDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/UserDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/VehicleCategoryDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/VehicleDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/exceptions/VehicleSubcategoryDetailsNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/VehicleCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/VehicleCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/VehicleSubcategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/models/VehicleSubcategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/ActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/ActivityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/CityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/CityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/FuelTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/FuelTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/LocationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RequestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RequestStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RequestStatusServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleSubcategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/hirewheels/services/impl/VehicleSubcategoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594072653899</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="4th  Checkpoint Adding the Exceptions">
+      <created>1594073986734</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1594073986734</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -292,7 +307,8 @@
     <MESSAGE value="2nd Checkpoint complete" />
     <MESSAGE value="3rd Checkpoint complete" />
     <MESSAGE value="4th  Checkpoint started" />
-    <option name="LAST_COMMIT_MESSAGE" value="4th  Checkpoint started" />
+    <MESSAGE value="4th  Checkpoint Adding the Exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th  Checkpoint Adding the Exceptions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Project_Structure" timestamp="1593157192245">
@@ -311,46 +327,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594042300212" />
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1594072650167">
+    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1594073984534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1594072650167" />
+    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1594073984534" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1593961704606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593961704606" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1594063948512">
+    <state width="1493" height="112" key="GridCell.Tab.0.bottom" timestamp="1594246449553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594063948512" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1594063948512">
+    <state width="1493" height="112" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594246449553" />
+    <state width="1493" height="112" key="GridCell.Tab.0.center" timestamp="1594246449553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594063948512" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1594063948512">
+    <state width="1493" height="112" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594246449553" />
+    <state width="1493" height="112" key="GridCell.Tab.0.left" timestamp="1594246449553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594063948512" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1594063948512">
+    <state width="1493" height="112" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594246449553" />
+    <state width="1493" height="112" key="GridCell.Tab.0.right" timestamp="1594246449553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594063948512" />
+    <state width="1493" height="112" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594246449553" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1594035469804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594035469804" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1594072663390">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1594073997210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594072663390" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594073997210" />
     <state x="584" y="191" key="chooseDestDirectoryDialog" timestamp="1592904515691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="191" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1592904515691" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1593157391442">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1594240688034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593157391442" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594240688034" />
     <state x="435" y="205" key="git4idea.merge.GitPullDialog" timestamp="1592993842978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -363,5 +379,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="109" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592980240934" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594245387006">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594245387006" />
   </component>
 </project>

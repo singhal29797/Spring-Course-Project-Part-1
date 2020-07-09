@@ -5,7 +5,7 @@ import com.upgrad.hirewheels.services.FuelTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service(value = "fuelTypeService")
 public class FuelTypeServiceImpl implements FuelTypeService {
 
     @Autowired
